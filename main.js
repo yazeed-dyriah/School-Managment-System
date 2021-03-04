@@ -52,39 +52,3 @@ function showMessage(event){
         alert('Faild to add student')
     }
 }
-function insertData() {
-	var name = document.getElementById("inputStudentName").value;
-	var id = document.getElementById("inputStudentid").value;
-	var gdpa = document.getElementById("inputStudentgdpa").value;
-	document.getElementById("insertionPoint").innerHTML += "<tr><td>" + name + "</td><td>" + id + "</td><td>" +  gdpa + "</td></tr>";
-
-	// The below part is to clear the values after the entry is added.
-	document.getElementById("inputStudentName").value = "";
-	document.getElementById("inputStudentid").value = "";
-	document.getElementById("inputStudentgdpa").value = "";
-}
-
-var list = function(family) {
-	var names = [];
-	for (var prop in family) {
-	  names.push(prop.name);
-	}
-	document.getElementById('aaron-family').innerHTML = names.join(' ');
-  }
-  list(family);
-// This week task:
-// Show list of students 
-// Update student
-// Delete student
-
-// 10 marks
-// 1) based on the follwoing:
-// a) easy to use  and prettyu look 3
-// b) resposnive design 2
-
-// c) clean code 2
-// d) show list for the user 1
-// e) update 1
-// f) delete 1
-
-// Deeadline: 20/2, on github.
